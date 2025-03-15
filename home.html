@@ -1,22 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Horizontal Navigator Bar</title>
-        <link rel="stylesheet" href="home.css">
-    </head>
-    <body>
-        <ul>
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="abstract.html">Abstract</a></li>
-            <li><a href="pendahuluan.html">Pendahuluan</a></li>
-            <li><a href="rencana.html">Rencana Kegiatan</a></li>
-            <li><a href="hasil.html">Hasil Kegiatan</a></li>
-            <li><a href="refleksi.html">Refleksi</a></li>
-            <li><a href="penutup.html">Penutup</a></li>
-            <li><a href="lampiran.html">Lampiran</a></li>
-            <li><a href="presentasi.html">Presentasi</a></li>
-        </ul>
 
-        <p id="paragraf1"></p>
-    </body>
+<head>
+    <title> Horizontal Navigator Bar</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <ul class="navbar">
+        <li class="home"><a class="active" href="#">Home</a></li>
+        <li class="abstract"><a href="#abstract-section">Abstract</a></li>
+        <li class="dropdownpendahuluan">
+            <a href="#pendahuluan" class="mainpendahuluan">Pendahuluan</a>
+            <div class="pendahuluan">
+                <a href="latarbelakang">Latar Belakang</a>
+                <a href="tujuan">Tujuan</a>
+                <a href="manfaat">Manfaat</a>
+            </div>
+        </li>
+        <li class="rencana"><a href="rencana.html">Rencana Kegiatan</a></li>
+        <li class="kegiatan"><a href="hasil.html">Hasil Kegiatan</a></li>
+        <li class="refleksi"><a href="refleksi.html">Refleksi</a></li>
+        <li class="dropdownpenutup">
+            <a href="#" class="mainpenutup">Penutup</a>
+            <div class="penutup">
+                <a href="kesimpulan">Kesimpulan</a>
+                <a href="saran">Saran</a>
+            </div>
+        </li>
+        <li class="lampiran"><a href="lampiran.html">Lampiran</a></li>
+        <li class="presentasi"><a href="presentasi.html">Presentasi</a></li>
+    </ul>
+
+    <ul class="profile-list">
+        <li class="profile-card1">
+            <img src="" alt="Ayanaara">
+            <p class="name">Ayanaara Kemal Haro</p>
+            <p>IX-4/05</p>
+            <audio class="seasons" src="Season- Wave to Earth.mp3" controls></audio>
+        </li>
+        <li class="profile-card2">
+            <img src="" alt="Josce">
+            <p class="name">Bernadeth Joscelyn Tan</p>
+            <p>IX-4/06</p>
+            <audio class="ordinary" src="Ariana Grande - ordinary things (JOSCE) .mp3" controls></audio>
+        </li>
+        <li class="profile-card3">
+            <img src="" alt="Lana">
+            <p class="name">Brigitta Milana Wahyudi</p>
+            <p>IX-4/08</p>
+            <audio class="luther" src="luther.mp3" controls></audio>
+        </li>
+        <li class="profile-card4">
+            <img src="" alt="Keiko">
+            <p class="name">Eugenia Keiko Wijaya</p>
+            <p>IX-4/14</p>
+            <audio class="mylove" src="I Lay My Love On You - Westlife.mp3" controls></audio>
+        </li>
+        <li class="profile-card5">
+            <img src="" alt="Diandra">
+            <p class="name">Laurentia Diandra Harsono</p>
+            <p>IX-4/22</p>
+            <audio class="blue" src="blue.mp3" controls></audio>
+        </li>
+        <li class="profile-card6">
+            <img src="" alt="Juean">
+            <p class="name">Rafaella Gratia Juean</p>
+            <p>IX-4/27</p>
+            <audio class="annie" src="annie. - Wave to Earth.mp3" controls></audio>
+        </li>
+    </ul>
+
+    <ul class="bio">
+        <h2 class="members">Get to Know Our Member!</h2>
+        <div class="container">
+            <ul class="nama-list">
+                <li onclick="setActive(this)">Ayanaara Kemal Haro</li>
+                <li onclick="setActive(this)">Bernadeth Joscelyn Tan</li>
+                <li onclick="setActive(this)">Brigitta Milana Wahyudi</li>
+                <li onclick="setActive(this)">Eugenia Keiko Wijaya</li>
+                <li onclick="setActive(this)">Laurentia Diandra Harsono</li>
+                <li onclick="setActive(this)">Rafaella Gratia Juean</li>
+            </ul>
+
+            <div id="biografi-container" class="biografi">
+                <h2 id="biografi-nama"></h2>
+                <p id="biografi-text"></p>
+            </div>
+        </div>
+    </ul>
+
+    <ul class="abstrak1">
+        <section id="abstract-section">
+            <h2 class="abstrak2">Abstract</h2>
+            <li class="abstrak">The Integrated Learning (IL) program has provided an opportunity for grade IX students
+                to experience direct entrepreneurship by organizing a bazaar. In this program, 6 students are grouped,
+                giving them the opportunity to use their creative minds to make their personalized store, and handmade
+                products that <strong>were sold</strong> to customers during the bazaar. Our group focused on developing products through
+                various creative processes, including biotechnology, sewing, and crafting. This project required us to
+                not only create quality products, but also to consider the financial and marketing aspect and view of
+                running a business. By participating in this program, valuable insights <strong>were gained</strong> into how businesses
+                operate, from the execution of making the products to selling them real-time.</li>
+            <li class="abstrak">At the start of the project, brainstorming discussions <strong>were held</strong> to create innovative
+                ideas from each group member, sometimes online and another period of time offline. During this time,
+                different product options <strong>were discussed</strong>, and examinations or trials of making that product <strong>were
+                conducted</strong> to decide which items would be ideal to produce. Once the final products <strong>had been decided</strong>
+                upon, materials <strong>had been bought</strong> and gathered, it was time to engage our production plan. Each member <strong>had
+                been assigned</strong> specific tasks based on their strengths, making sure that every aspect of the business was
+                handled effectively. Additionally, marketing strategies <strong>were developed</strong>, and promotional materials <strong>were
+                designed</strong> to attract customers during the bazaar.</li>
+            <li class="abstrak">Throughout the production process, there were a few adjustments that <strong>had to be made</strong> as
+                a few challenges <strong>were encountered</strong> during the process. One of the biggest difficulties was managing time,
+                as the production process took longer than expected. Some materials were unavailable/out of stock in
+                online shops, requiring us to find substitutes while maintaining product quality. Pricing decisions <strong>were
+                    also difficult</strong>, as we had to balance affordability with making a profit. Through teamwork and effective
+                communication, these obstacles <strong>were overcome</strong>, and the bazaar <strong>was successfully executed</strong>, providing us
+                with real life experience in entrepreneurship.</li>
+            <li class="abstrak">Through this project, many lessons <strong>were learned</strong> about business management, creativity,
+                and collaboration. It became much more clear that running a business is hard, and requires not only
+                skill but also adaptability and problem-solving abilities. Mistakes <strong>were made</strong>, but they were remembered
+                as opportunities for growing our capabilities. Teamwork and bond <strong>was strengthened</strong>, responsibilities <strong>were
+                shared</strong>. This also teaches us the importance of relying on one another. Finally, we learned to appreciate
+                the hard work of entrepreneurship and the importance of good and structured planning. This IL program
+                was a priceless experience, allowing us grade IX’s to grow both individually and as a team while
+                applying academic knowledge to face life situations.</li>
+        </section>
+    </ul>
+
+    <ul>
+        <section id="pendahuluan">
+            <h2 class="pendahuluan1">Pendahuluan</h2>
+            <li class="pendahuluan2"></li>
+        </section>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
